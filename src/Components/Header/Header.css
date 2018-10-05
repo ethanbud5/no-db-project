@@ -1,0 +1,15 @@
+header{
+    position: absolute;
+    background: #0EB1D2;
+    height: 100px;
+    width: 100vw;
+    top:0px;
+    display: flex;
+    align-items: center;
+}
+/*MAIN TEXT IN HEADER*/
+
+.title{
+    margin-left: 80px;
+    font-size: 40px;
+}
