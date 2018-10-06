@@ -8,7 +8,7 @@ function CustomerList(props){
     return(
         <div className="list_container">
             <SearchCustomers findCustHandler={props.findCustHandler}/>
-            <List customers={props.customers}/>
+            <List customers={props.customers} viewCustomerInfo={props.viewCustomerInfo}/>
         </div>
     )
 }

@@ -1,0 +1,32 @@
+.customer_list_card{
+    height: 80px;
+    width: 100%;
+    margin:auto;
+    background: rgb(124, 121, 121);
+    display: flex;
+    margin-top:20px;
+    border-radius: 3px;
+    box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.27);
+    /* border: 1px solid white; */
+    cursor: pointer;
+    color: white;
+    transition:0.3s;
+}
+.customer_list_card:hover{
+    background: white;
+    color:black;
+}
+.customer_list_card img{
+    border-radius: 50%;
+    float: left;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    border: 1px solid white
+}
+.customer_list_card p{
+    padding: 8px;
+    margin: 11px;
+    font-size: 1.9vw;
+
+}

@@ -1,4 +1,5 @@
 import React,{Component} from "react";
+import "./SearchCustomers.css"
 
 class SearchCustomers extends Component{
     constructor(props){
@@ -15,7 +16,7 @@ class SearchCustomers extends Component{
     render(){
         // console.log(this.state)
         return(
-            <input type="text" value={this.state.input} onChange={this.inputChange}/>
+            <input type="text" className="search_input" placeholder="Search" value={this.state.input} onChange={this.inputChange}/>
         )
     }
 }

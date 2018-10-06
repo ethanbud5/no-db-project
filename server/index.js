@@ -1,7 +1,7 @@
 var express = require("express");
 var {json} = require("body-parser");
 var cors = require("cors");
-var {getCustomers,findCustomer} = require("./controllers/customerCtrl")
+var {getCustomers,findCustomer,addCustomer,editCustomer,deleteCustomer} = require("./controllers/customerCtrl")
 
 var app = express();
 
@@ -11,6 +11,9 @@ app.use(cors());
 
 app.get("/api/customers",getCustomers);
 app.get("/api/customers/search/",findCustomer)
+app.post("/api/customers/add",addCustomer)
+app.put("/api/customers/edit",editCustomer)
+app.delete("/api/customers/delete/:id",deleteCustomer);
 
 
 app.listen(3001,()=>{
