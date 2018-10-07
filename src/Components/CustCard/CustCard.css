@@ -1,16 +1,21 @@
 .cust_container{
-    width: 55vw;
+    width: 60vw;
     height: 100vh;
     position: fixed;
     right: 5vw;
     background: white;
     margin-left: 20px;
     /* margin-right: 30px; */
-    margin-top: 100px;
+    margin-top: 68px;
     text-align: center;
     box-shadow: 1px 6px 10px 10px rgba(0,0,0,0.27);
     display: flex;
     justify-content: center
+}
+@media only screen and (max-width: 1400px) {
+    .cust_container {
+        width: 55vw;
+    }
 }
 .cust_info_box{
     width:50%;
@@ -22,9 +27,16 @@
 .cust_info_box > img{
     margin-top:10px;
     border-radius: 50%;
+    width: 128px;
+    height: 128px;
 }
 .cust_info_box div{
     box-sizing: border-box;
     margin-top:1px;
     font-size: 20px;
+}
+@media only screen and (max-width:967px){
+    .cust_info_box div{
+        font-size: 2vw;
+    }
 }

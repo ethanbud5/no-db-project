@@ -1,8 +1,6 @@
 .add_cust_btn{
     height: 35px;
-    position: relative;
-    /* margin-left: 60px; */
-    margin-left: 10vw;
+    margin-right: 40px;
     background-color: rgb(124, 121, 121);
     border: none;
     color: white;
@@ -42,7 +40,7 @@
 }
  .edit_btn{
     position: fixed;
-    bottom: 40px;
+    bottom: 45px;
     right: 110px;
     height: 30px;
     background-color: rgb(124, 121, 121);

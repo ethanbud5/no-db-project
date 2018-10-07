@@ -1,17 +1,19 @@
 header{
     position: fixed;
     background: #0EB1D2;
-    height: 100px;
+    height: 68px;
     width: 100vw;
     top:0px;
     display: flex;
     align-items: center;
     z-index: 1;
+    justify-content: space-between;
 }
 /*MAIN TEXT IN HEADER*/
 
 .title{
-    margin-left: 5vw;
+    margin-left: 4vw;
     font-size: 30px;
     font-size: 3vw;
+    /* float: right; */
 }

@@ -52,7 +52,7 @@ function editCustomer(req,res){
 function deleteCustomer(req,res){
     let id = req.params.id;
     copyOfCustomers.map((customer,i)=>{
-        if(customer.login.uuid === id){
+        if(customer.login.uuid.toString() === id){
             copyOfCustomers.splice(i,1)
             // console.log(messages[i])
         }

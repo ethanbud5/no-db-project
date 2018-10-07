@@ -23,7 +23,7 @@ class CustInfo extends Component{
                 },
                 picture:{
                     medium:"https://via.placeholder.com/72x72/?text=Avatar",
-                    large:"https://via.placeholder.com/128x128/?text=Avatar"
+                    large:"https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"
                 },
                 login:{
                     uuid:0
@@ -33,6 +33,7 @@ class CustInfo extends Component{
         }
         this.inputChange = this.inputChange.bind(this)
         this.addressChange = this.addressChange.bind(this)
+        this.pictureURLChange = this.pictureURLChange.bind(this)
     }
     inputChange(e){
         let {name,value} = e.target;
@@ -51,6 +52,13 @@ class CustInfo extends Component{
 
         let newCustomerInfo = {...this.state.customer};
         newCustomerInfo.location[name] = value;
+        this.setState({customer:newCustomerInfo})
+    }
+    pictureURLChange(e){
+        let {name,value} = e.target;
+
+        let newCustomerInfo = {...this.state.customer};
+        newCustomerInfo.picture[name] = value;
         this.setState({customer:newCustomerInfo})
     }
     render(){
@@ -86,6 +94,10 @@ class CustInfo extends Component{
                     <div>
                         <span>Zipcode: </span>
                         <input type="text" name="postcode" value={this.state.customer.location.postcode} onChange={this.addressChange}/>
+                    </div>
+                    <div>
+                        <span>Image URL: </span>
+                        <input type="text" name="large" value={this.state.customer.picture.large} onChange={this.pictureURLChange}/>
                     </div>
                 {this.props.isEdit&&(
                     <Button 
