@@ -59,8 +59,8 @@ randomCities.map((city,index)=>{
     })
 })
 
-function getCordinates(city){
-    axios.get(`https://geocode-maps.yandex.ru/1.x/?geocode=${city}&lang=en_US&format=json`)
+// function getCordinates(city){
+//     axios.get(`https://geocode-maps.yandex.ru/1.x/?geocode=${city}&lang=en_US&format=json`)
     // .then(res=>{
     //     //console.log("START---->",res.data.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos,"<---END")
     //     let coordinates = res.data.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos.split(" ")
@@ -70,7 +70,7 @@ function getCordinates(city){
     //                  longitude: coordinates[1]
     //                 } 
     // })
-}
+// }
 
 function getCustomers(req,res){
     axios.get("https://randomuser.me/api/?results=20&seed=6a80104f53071553").then((response)=>{

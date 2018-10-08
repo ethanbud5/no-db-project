@@ -60,6 +60,19 @@ class Main extends Component {
     }))
   }
   createNewCustomer(customer){
+      if(customer.name.first === ""||customer.name.last ===""){
+          alert("Must enter name.")
+          return
+      }
+      if(customer.location.city === ""){
+          alert("Must enter valid city.");
+          return
+      }
+      if(customer.email === ""){
+          alert("Must enter valid email.")
+          return
+      }
+
       axios.post("http://localhost:3001/api/customers/add",customer).then(res=>{
           console.log(res)
           this.setState({
