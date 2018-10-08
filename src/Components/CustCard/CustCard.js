@@ -1,6 +1,7 @@
 import React from "react";
 import "./CustCard.css"
 import Button from "./../Button/Button"
+import MapView from "./../MapView/MapView"
 
 function CustCard(props){
     // console.log(props.customer[0])
@@ -17,12 +18,15 @@ function CustCard(props){
                     <div>City: {props.customer.location.city}</div>
                     <div>Zipcode: {props.customer.location.postcode}</div>
                 </div>
+                {/* <h3>Notes for Customer: </h3>
+                <textarea type="text" placeholder="Add new note..."/> */}
                 <Button 
                     btnText="Edit Customer" 
                     clickHandler={props.editBtnHandler}
                     btnStyle="edit_btn"
                 />
             </div>
+            <MapView cord={props.customer.location.coordinates}/>
         </div>
     )
 }
