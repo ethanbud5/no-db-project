@@ -83,12 +83,14 @@ function getCustomers(req,res){
                 //CHANGING ALL NAMES TO BEGIN WITH UPPERCASE
                 customer.name.first = first.charAt(0).toUpperCase() + first.slice(1);
                 customer.name.last = last.charAt(0).toUpperCase() + last.slice(1);
+                customer.comment = ""
                 // console.log(res.data);
                 customer.location.city = randomCities[i];
                 customer.location.coordinates = {
                         latitude: cordArray[i].latitude,
                         longitude: cordArray[i].longitude
                     }
+                    // console.log(customer)
                     return customer
                 });
 

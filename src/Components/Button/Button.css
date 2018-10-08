@@ -82,3 +82,21 @@
     color: black;
     border: 1px solid rgb(187, 69, 69);
 }
+.save_btn{
+    background-color: rgb(124, 121, 121);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 48%;
+}
+.save_btn:hover{
+    background: white;
+    color: black;
+    border: 1px solid rgb(124, 121, 121);
+}

@@ -2,6 +2,7 @@ import React from "react";
 import "./CustCard.css"
 import Button from "./../Button/Button"
 import MapView from "./../MapView/MapView"
+import CommentArea from "./../CommentArea/CommentArea"
 
 function CustCard(props){
     // console.log(props.customer[0])
@@ -27,6 +28,7 @@ function CustCard(props){
                 />
             </div>
             <MapView cord={props.customer.location.coordinates}/>
+            <CommentArea customer={props.customer} editClickHandler={props.editClickHandler}/>
         </div>
     )
 }

@@ -142,6 +142,7 @@ class Main extends Component {
                 <CustCard 
                     customer={this.customerObjForCard()}
                     editBtnHandler={this.toggleEditCustomer}
+                    editClickHandler = {this.editClickHandler}
                 /> 
                 }
             </div>
